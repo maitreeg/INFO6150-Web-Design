@@ -215,6 +215,38 @@ input, select {
   }
 
 
+.card-image5 {
+  grid-area: image;
+  background: url("images/preWed1.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image6 {
+  grid-area: image;
+  background: url("images/preWed2.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image7 {
+  grid-area: image;
+  background: url("images/preWed3.jpeg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-image8 {
+    grid-area: image;
+    background: url("images/preWed4.webp");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+
+
 
 .image_container {
     display: flex;
@@ -282,7 +314,7 @@ audio {
   display: flex;
 }
 
-.about_travelIndia {
+.about_ClickVision {
   font-weight: 500;
   font-size: 17px;
   color: #edf0f1;

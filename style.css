@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cfd4ee;
+  }  
+
+h1 {
+    cursor: pointer;
+    color: #0088a9;
+    font-weight: 500;
+  }
+
+li, a {
+  font-weight: 500;
+  font-size: 17px;
+  color: #1e2224;
+  text-decoration: none;
+}
+  
+.menu_links li {
+    color: black;
+    display: inline-block;
+    padding: 0px 20px;
+} 
+
+.menu_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.menu_links li img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu_links li a:hover {
+    color: #0088a9;
+}
+
+section {
+  padding: 15px 10%;
+}
+
+h2 {
+  font-size: 38px;
+  color: #ffffff;
+  font-weight: 450;
+}
+
+h3 {
+  font-size: 24px;
+  color: #131212;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+h6 {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.wrapper
+{
+	padding-bottom: 10px;
+}
+
+.wrapperC{
+    margin-top: 50px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 0px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+
+.container {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+/* search flight  */
+
+.booking_container {   
+  display: flex;  
+  align-items: center;
+  justify-content: center;  
+  padding: 10px;
+}
+
+.form {
+  background-color: white; 
+  width: 100%;  
+  max-width: 930px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 35px 40px;
+  border-radius: 5px;
+}
+
+.booking_container .form .input-details {
+  display: flex;
+  flex: wrap;
+}
+
+.travel-details {
+  max-width: 100%;
+  width: calc(100% / 2-20px);
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.search-flight {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 15px;
+    border-radius: 30px;
+    width: 140px;
+    font-size: 15px;
+}
+
+.search-flight:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+input, select {
+  height: 45px;
+  width: 150px;
+}
+
+/* End Block  */
+
+
+
+/* Images section Block  */
+
+.card {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 190px 40px;
+  grid-template-areas: "image" "text";
+  border-radius: 18px;
+  
+  box-shadow: 5px 5px 15px rgba(0 0 0 0.9);
+  text-align: center;  
+  margin: 20px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card-image1 {
+  grid-area: image;
+  background: url("images/mumbai.webp");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image2 {
+  grid-area: image;
+  background: url("images/kerala.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image3 {
+  grid-area: image;
+  background: url("images/delhi.avif");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card-image4 {
+    grid-area: image;
+    background: url("images/rajasthan.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+
+
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 330px;
+}
+
+details {
+    padding: 35px;
+    justify-items: center;
+    height: 20%;
+}
+.text_container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+/* End Block  */
+
+
+/* Videos Section Block  */
+.video_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+}
+video {
+  margin: 20px;
+  height: 300px;
+  width: 450px;
+}
+.video {
+  display: inline;
+}
+/* End Block  */
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #24252A;
+  padding: 15px 10%;
+}
+
+/* About Section Page CSS  */
+audio {
+  margin: 10px;
+}
+.about_container {
+  height: 100%;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.about_container h2{
+    padding: 50px;
+    margin: 50px;
+}
+.about_audio_container {
+  display: flex;
+}
+
+.about_travelIndia {
+  font-weight: 500;
+  font-size: 17px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+}
+/* End Block  */
+
+table {
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 500px;
+    font-size: larger;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table .button-container {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 15px;
+    border-radius: 30px;
+    width: 140px;
+    font-size: 15px;
+    margin-left: 165px;
+}
+
+td input{
+    height: 45px;
+    width: 250px;
+}
+input[type="radio"] {
+    width: 25px;
+    height: 15px 
+}
+p.email {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.paraFeed{
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+.feedback{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.inputStyle{
+    padding: 10px;
+    width: 220px;
+    height: 45px;
+    border: black;
+    border-style: double;
+}
+label {
+    padding: 20px;
+    margin: 20px;
+}
+.button-container1 {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 12px;
+    border-radius: 30px;
+    width: 140px;
+    font-size: 15px;
+    
+}
+.button-container2 {
+    margin-top: 25px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    padding: 12px;
+    border-radius: 30px;
+    width: 140px;
+    font-size: 15px;
+    margin-left: 165px;
+}

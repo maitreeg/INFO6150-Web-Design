@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel India</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Travel India</h1> 
+        <menu type="context" id="myContextMenu">
+            <ul class="menu_links">
+                <li><img src="images/profile.png" alt="Profile page"><a href="about.html">About Us</a></li>
+                <li><img src="images/stay_home.png" alt="Home Page"><a href="index.html">Home</a></li>
+                <li><img src="images/contacts.png" alt="Contact Us page"><a href="contact.html">Contact US</a></li>
+            </ul>
+        </menu>            
+    </header>
+    <div class="container">
+        <!-- Section 1 Block -->
+        <section class="images_section">
+            <h2 class="trial">Welcome to Travel India</h2>  
+            <h2>Your Safety our responsibilty!</h3> 
+            <h3>Most visited destinations</h3>
+            <div class="image_container">
+                <div class="card">
+                    <div class="card-image1"></div>
+                    <div class="card-text">
+                    <span class="date">Mumbai City</span>
+                    <p class="city_info">"City of Dreams"</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image2"></div>
+                    <div class="card-text">
+                    <span class="date">Kerala</span>
+                    <p class="city_info">God's own country</p>
+                    </div>
+                
+                </div>
+                <div class="card">
+                <div class="card-image3"></div>
+                <div class="card-text">
+                <span class="date">Delhi</span>
+                <p class="city_info">The Capital of India</p>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-image4"></div>
+                    <div class="card-text">
+                    <span class="date">Rajasthan</span>
+                    <p class="city_info">The Land of Maharaja</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Block -->
+        <div class="wrapper">
+            <div class="divider div-transparent"></div>
+        </div>
+        <section> 
+            <div class="booking_container">  
+            <div class="form">
+                <form>
+                    <div>
+                        <h3>Search your flight<img src="images/favicon.png" alt="Flight image"></h3> 
+                    </div>           
+                <div class="input-details">
+                    <div class="travel-details">
+                    <span class="details">From:</span>
+                        <select name="from">
+                        <option>Select City</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="kochi">Kochi</option>
+                    </select>
+                    </div>
+                    
+                    <div class="travel-details">
+                    <span class="details">To:</span>
+                    <select name="to">
+                        <option>Select City</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="kochi">Kochi</option>
+                    </select>
+                    </div>
+
+                    <div class="travel-details">
+                        <span class="details">To:</span>
+                        <select name="to">
+                        <option>Select Class</option>
+                        <option value="economy">Economy Class</option>
+                        <option value="business">Business Class</option>
+                        <option value="first">First Class</option>
+                        </select>
+                    </div>
+                    
+                    <div class="travel-details">
+                    <span class="details">Depart Date:</span>
+                    <input type="date" id="depart"> 
+                    </div>
+                    
+                    <div class="travel-details">
+                    <span class="details">Return Date:</span>
+                    <input type="date" id="return">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="search-flight" type="submit">Search</button>
+                </div>                          
+                </form> 
+            </div>                              
+            </div>                 
+        </section>
+
+        <div class="wrapper">
+            <div class="divider div-transparent">        
+            </div>
+        </div>
+
+        <!-- Section 3 Block -->
+        <section class="videos_section">
+            <h2>Plan your perfect trip</h2>
+            <h3>View our most rated destinations</h3>
+            <div class="video_container">          
+            <div class="video">
+                <video controls>
+                <source src="videos/Goa.mp4" type="video/mp4">            
+                </video>
+                <p>Goa</p>
+            </div>
+            <div class="video">
+                <video controls>
+                <source src="videos/Kerala.mp4" type="video/mp4">
+                </video>
+                <p>Kerala</p>
+            </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Block  -->
+    <footer>
+    <h6>Travel India ensures the Safety of its customers. We are at your service. To know more about us visit our About page.</h6>
+    <h6>Travel India © 2024</h6>
+    </footer>
+    <!-- End Block  -->
+</body>
+</html>

@@ -1,0 +1,321 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Clear the float */
+}
+
+.column {
+    box-sizing: border-box;
+    padding: 16px;
+     /* Both columns take full width by default */
+}
+.column1 {
+    width: 40%; /* Set the width of the first column to 30% */
+}
+
+.column2 {
+    width: 60%; /* Set the width of the second column to 80% */
+}
+
+.secContainer{
+    margin: 0 auto;
+}
+
+menu {
+    padding: 10px 0;
+    margin: 30px 0;
+}
+
+.menu_links{
+    padding: 0;
+}
+
+.menu_links li {
+    color: black;
+    display: inline-block;
+    padding: 10px 0;
+} 
+
+.menu_links li a {
+    transition: all 0.3s ease 0s;
+    color: cadetblue;
+}
+
+.menu_links li img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu_links li a:hover {
+    color: #0088a9;
+}
+
+.wrapper
+{
+	padding-bottom: 20px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 10px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+p.about_ClickVision {
+    font-size: medium;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.certification {
+    margin: 10px;
+    width: 25%;
+    height: 30%;
+    display: inline-flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.certification figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.certification:hover {
+    transform: scale(1.05);
+}
+
+.certification:hover figcaption {
+    opacity: 1;
+}
+
+video {
+    margin: 20px;
+    height: 300px;
+    width: 450px;
+}
+
+footer {
+    width: 100%;
+    height: 6%;
+    bottom: 0;
+    background-color: #24252A;
+    position: fixed;
+    color: whitesmoke;
+  }
+
+audio{
+    width: 480px;
+    margin: 10px;
+}
+
+form{
+    display: grid;
+    justify-content: center;
+    color: #24252A;
+    
+}
+label{
+    margin: 5px;
+}
+input{
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 200px;
+    height: 25px;
+}
+button{
+    width: 150px;
+    height: 35px;
+    background-color: #0088a9;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+/* Style the entire table */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-bottom: 50px;
+}
+
+/* Style table headers */
+.skills-table th {
+    border-bottom: 1px solid #df5c83;
+    background-color: #d3cece;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table data cells */
+.skills-table td {
+    padding: 10px;
+    border-bottom: 1px solid #df5c83;
+    background-color: #d3cece;
+}
+
+/* Hover effect on rows */
+.skills-table tr:hover td {
+    background-color: #e5e5e5;
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+}
+
+
+
+/* Laptop view: Two-column layout */
+@media only screen and (min-width: 769px) {
+    .column { 
+        width: 100%;
+        float: left;
+    }
+    menu {
+        padding: 10px 0;
+        margin: 30px 0;
+        background-color: black;
+    }
+    .menu_links li {
+        color: black;
+        display: inline-flex;
+        font-size: 20px;
+        padding: 10px 60px;
+    }
+    .profileImage img {
+        width: 20%;
+        height: 20%;
+        border-radius: 47%;
+        margin: 0 40%;
+        display: flex;
+    }
+    .profileImage p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+}
+
+/* iPad view: Vertical column layout */
+@media only screen and (min-width: 366px) and (max-width: 768px) {
+    .column {
+        float: left;
+        
+    }
+    .menu_links {
+        padding: 5px;
+        display: grid;
+    }
+    .profileImage img {
+        width: 50%;
+        border-radius: 47%;
+    }
+    .profileImage p {
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .column.column2 figcaption {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    video {
+        margin: 20px;
+        height: 220px;
+        width: 370px;
+    }
+    audio{
+        width: 200px;
+        margin: 10px;
+    }
+    
+}
+
+/* Smartphone view: Vertical column layout */
+@media only screen and (min-width: 350px) and (max-width: 365px) {
+    .column {
+        float: left; 
+        width: 50%;
+    }
+    .menu_links {
+        padding: 19px;
+    }
+    .profileImage img {
+        width: 50%;
+        border-radius: 47%;
+    }
+    .profileImage p {
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .column.column2 figcaption {
+        font-size: 5px;
+        text-align: center;
+    }
+    audio{
+        width: 200px;
+        margin: 10px;
+    }
+}
+
+#page-wraper {
+    background: url(images/bg.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    overflow: auto;
+}
+  
